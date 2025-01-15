@@ -21,6 +21,7 @@ local ClosedUI_2 = Instance.new("ImageButton")
 BazingaUI.Name = "BazingaUI"
 BazingaUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 BazingaUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+BazingaUI.ResetOnSpawn = false
 
 MainUI.Name = "MainUI"
 MainUI.Parent = BazingaUI
@@ -143,23 +144,23 @@ ClosedUI_2.Image = "rbxassetid://91164717917984"
 
 -- Scripts:
 
-local function DQDZ_fake_script() -- exec.LocalScript 
+local function YAEKRI_fake_script() -- exec.LocalScript 
 	local script = Instance.new('LocalScript', exec)
 
 	script.Parent.Activated:Connect(function()
-		loadstring(script.Parent.Parent.funni.Text)()
+		loadstring(script.Parent.Parent.Parent.funni.Text)()
 	end)
 end
-coroutine.wrap(DQDZ_fake_script)()
-local function ODIHEOF_fake_script() -- Clear.LocalScript 
+coroutine.wrap(YAEKRI_fake_script)()
+local function SXDX_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	script.Parent.Activated:Connect(function()
-		script.Parent.Parent.funni.Text = ""
+		script.Parent.Parent.Parent.funni.Text = ""
 	end)
 end
-coroutine.wrap(ODIHEOF_fake_script)()
-local function TLXX_fake_script() -- fard.LocalScript 
+coroutine.wrap(SXDX_fake_script)()
+local function KLVL_fake_script() -- fard.LocalScript 
 	local script = Instance.new('LocalScript', fard)
 
 	script.Parent.Activated:Connect(function()
@@ -169,18 +170,18 @@ local function TLXX_fake_script() -- fard.LocalScript
 		bazinga.Playing = true
 	end)
 end
-coroutine.wrap(TLXX_fake_script)()
-local function BGSOX_fake_script() -- clip.LocalScript 
+coroutine.wrap(KLVL_fake_script)()
+local function MGIKORC_fake_script() -- clip.LocalScript 
 	local script = Instance.new('LocalScript', clip)
 
 	script.Parent.Activated:Connect(function()
-		script.Parent.Parent.funni.Text = getclipboard()
+		script.Parent.Parent.Parent.funni.Text = getclipboard()
 		wait(0.2)
 		loadstring(script.Parent.Parent.Parent.funni.Text)()
 	end)
 end
-coroutine.wrap(BGSOX_fake_script)()
-local function KULJGKI_fake_script() -- MainUI.LocalScript 
+coroutine.wrap(MGIKORC_fake_script)()
+local function ORMTB_fake_script() -- MainUI.LocalScript 
 	local script = Instance.new('LocalScript', MainUI)
 
 	local sheldon = script.Parent
@@ -188,8 +189,8 @@ local function KULJGKI_fake_script() -- MainUI.LocalScript
 	sheldon.Draggable = true
 	sheldon.Active = true
 end
-coroutine.wrap(KULJGKI_fake_script)()
-local function NMJVD_fake_script() -- xfrombfdi.LocalScript 
+coroutine.wrap(ORMTB_fake_script)()
+local function CDNESFL_fake_script() -- xfrombfdi.LocalScript 
 	local script = Instance.new('LocalScript', xfrombfdi)
 
 	local me = script.Parent.Parent.Parent.MainUI
@@ -202,8 +203,8 @@ local function NMJVD_fake_script() -- xfrombfdi.LocalScript
 	end)
 	
 end
-coroutine.wrap(NMJVD_fake_script)()
-local function XLAP_fake_script() -- ClosedUI_2.LocalScript 
+coroutine.wrap(CDNESFL_fake_script)()
+local function WJRQL_fake_script() -- ClosedUI_2.LocalScript 
 	local script = Instance.new('LocalScript', ClosedUI_2)
 
 	script.Parent.Activated:Connect(function()
@@ -212,11 +213,11 @@ local function XLAP_fake_script() -- ClosedUI_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(XLAP_fake_script)()
-local function RCRYF_fake_script() -- ClosedUI.LocalScript 
+coroutine.wrap(WJRQL_fake_script)()
+local function VJBMO_fake_script() -- ClosedUI.LocalScript 
 	local script = Instance.new('LocalScript', ClosedUI)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(RCRYF_fake_script)()
+coroutine.wrap(VJBMO_fake_script)()
