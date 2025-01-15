@@ -1,0 +1,219 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local BazingaUI = Instance.new("ScreenGui")
+local MainUI = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local exec = Instance.new("TextButton")
+local Clear = Instance.new("TextButton")
+local fard = Instance.new("ImageButton")
+local funni = Instance.new("TextBox")
+local clip = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local xfrombfdi = Instance.new("TextButton")
+local ClosedUI = Instance.new("Frame")
+local ClosedUI_2 = Instance.new("ImageButton")
+
+--Properties:
+
+BazingaUI.Name = "BazingaUI"
+BazingaUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+BazingaUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainUI.Name = "MainUI"
+MainUI.Parent = BazingaUI
+MainUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainUI.BorderSizePixel = 0
+MainUI.Position = UDim2.new(0.193842649, 0, 0.233167082, 0)
+MainUI.Size = UDim2.new(0, 460, 0, 22)
+
+ImageLabel.Parent = MainUI
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0, 0, 1, 0)
+ImageLabel.Size = UDim2.new(0, 460, 0, 203)
+ImageLabel.Image = "rbxassetid://15875675373"
+
+exec.Name = "exec"
+exec.Parent = ImageLabel
+exec.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+exec.BorderColor3 = Color3.fromRGB(0, 0, 0)
+exec.BorderSizePixel = 0
+exec.Position = UDim2.new(0.0260869563, 0, 0.827586234, 0)
+exec.Size = UDim2.new(0, 140, 0, 27)
+exec.Font = Enum.Font.SourceSans
+exec.Text = "Execute"
+exec.TextColor3 = Color3.fromRGB(0, 0, 0)
+exec.TextSize = 14.000
+
+Clear.Name = "Clear"
+Clear.Parent = ImageLabel
+Clear.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.632608712, 0, 0.827586234, 0)
+Clear.Size = UDim2.new(0, 100, 0, 27)
+Clear.Font = Enum.Font.SourceSans
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(0, 0, 0)
+Clear.TextSize = 14.000
+
+fard.Name = "fard"
+fard.Parent = ImageLabel
+fard.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fard.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fard.BorderSizePixel = 0
+fard.Position = UDim2.new(0.913043499, 0, 0.827586234, 0)
+fard.Size = UDim2.new(0, 30, 0, 27)
+fard.Image = "rbxassetid://18851155348"
+
+funni.Name = "funni"
+funni.Parent = ImageLabel
+funni.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+funni.BackgroundTransparency = 0.400
+funni.BorderColor3 = Color3.fromRGB(0, 0, 0)
+funni.BorderSizePixel = 0
+funni.Position = UDim2.new(0.0260869563, 0, 0.0837438405, 0)
+funni.Size = UDim2.new(0, 438, 0, 140)
+funni.Font = Enum.Font.SourceSans
+funni.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+funni.PlaceholderText = "--enter scrip"
+funni.Text = ""
+funni.TextColor3 = Color3.fromRGB(251, 252, 255)
+funni.TextSize = 14.000
+funni.TextXAlignment = Enum.TextXAlignment.Left
+funni.TextYAlignment = Enum.TextYAlignment.Top
+
+clip.Name = "clip"
+clip.Parent = ImageLabel
+clip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+clip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+clip.BorderSizePixel = 0
+clip.Position = UDim2.new(0.349999994, 0, 0.827586234, 0)
+clip.Size = UDim2.new(0, 122, 0, 27)
+clip.Font = Enum.Font.SourceSans
+clip.Text = "Execute from Clipboard"
+clip.TextColor3 = Color3.fromRGB(0, 0, 0)
+clip.TextSize = 14.000
+
+TextLabel.Parent = MainUI
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0869565234, 0, 0.181818187, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 14)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "funny sheldon exploit wii sports yummy ratatouille!!!!!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+xfrombfdi.Name = "x from bfdi"
+xfrombfdi.Parent = MainUI
+xfrombfdi.BackgroundColor3 = Color3.fromRGB(255, 6, 0)
+xfrombfdi.BorderColor3 = Color3.fromRGB(0, 0, 0)
+xfrombfdi.BorderSizePixel = 0
+xfrombfdi.Position = UDim2.new(0.952173889, 0, 0, 0)
+xfrombfdi.Size = UDim2.new(0, 22, 0, 22)
+xfrombfdi.Font = Enum.Font.SourceSans
+xfrombfdi.Text = "X"
+xfrombfdi.TextColor3 = Color3.fromRGB(255, 255, 255)
+xfrombfdi.TextSize = 14.000
+
+ClosedUI.Name = "ClosedUI"
+ClosedUI.Parent = BazingaUI
+ClosedUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ClosedUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ClosedUI.BorderSizePixel = 0
+ClosedUI.Position = UDim2.new(0.0228050165, 0, 0.344827592, 0)
+ClosedUI.Size = UDim2.new(0, 81, 0, 81)
+ClosedUI.Visible = false
+
+ClosedUI_2.Name = "ClosedUI"
+ClosedUI_2.Parent = ClosedUI
+ClosedUI_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ClosedUI_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ClosedUI_2.BorderSizePixel = 0
+ClosedUI_2.Position = UDim2.new(0.120148413, 0, 0.127817973, 0)
+ClosedUI_2.Size = UDim2.new(0, 60, 0, 60)
+ClosedUI_2.Image = "rbxassetid://91164717917984"
+
+-- Scripts:
+
+local function OMFJZO_fake_script() -- exec.LocalScript 
+	local script = Instance.new('LocalScript', exec)
+
+	script.Parent.Activated:Connect(function()
+		loadstring(script.Parent.Parent.funni.Text)()
+	end)
+end
+coroutine.wrap(OMFJZO_fake_script)()
+local function UVNMJ_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.funni.Text = ""
+	end)
+end
+coroutine.wrap(UVNMJ_fake_script)()
+local function DGLPX_fake_script() -- fard.LocalScript 
+	local script = Instance.new('LocalScript', fard)
+
+	script.Parent.Activated:Connect(function()
+		script.Parent.Bazinga.Playing = true
+	end)
+end
+coroutine.wrap(DGLPX_fake_script)()
+local function MIFIRU_fake_script() -- clip.LocalScript 
+	local script = Instance.new('LocalScript', clip)
+
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.funni.Text = getclipboard()
+		wait(0.01)
+		loadstring(script.Parent.Parent.funni.Text)
+	end)
+end
+coroutine.wrap(MIFIRU_fake_script)()
+local function IIBYPFA_fake_script() -- MainUI.LocalScript 
+	local script = Instance.new('LocalScript', MainUI)
+
+	local sheldon = script.Parent
+	
+	sheldon.Draggable = true
+	sheldon.Active = true
+end
+coroutine.wrap(IIBYPFA_fake_script)()
+local function ULIKH_fake_script() -- xfrombfdi.LocalScript 
+	local script = Instance.new('LocalScript', xfrombfdi)
+
+	local me = script.Parent.Parent.Parent.MainUI
+	local main = script.Parent.Parent.Parent.ClosedUI
+	
+	
+	script.Parent.Activated:Connect(function()
+		me.Visible = false
+		main.Visible = true
+	end)
+	
+end
+coroutine.wrap(ULIKH_fake_script)()
+local function PTQTIK_fake_script() -- ClosedUI_2.LocalScript 
+	local script = Instance.new('LocalScript', ClosedUI_2)
+
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.MainUI.Visible = true
+	end)
+	
+end
+coroutine.wrap(PTQTIK_fake_script)()
+local function WIAXGY_fake_script() -- ClosedUI.LocalScript 
+	local script = Instance.new('LocalScript', ClosedUI)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(WIAXGY_fake_script)()
