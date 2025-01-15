@@ -9,10 +9,10 @@ local ImageLabel = Instance.new("ImageLabel")
 local exec = Instance.new("TextButton")
 local Clear = Instance.new("TextButton")
 local fard = Instance.new("ImageButton")
-local funni = Instance.new("TextBox")
 local clip = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local xfrombfdi = Instance.new("TextButton")
+local funni = Instance.new("TextBox")
 local ClosedUI = Instance.new("Frame")
 local ClosedUI_2 = Instance.new("ImageButton")
 
@@ -71,23 +71,6 @@ fard.Position = UDim2.new(0.913043499, 0, 0.827586234, 0)
 fard.Size = UDim2.new(0, 30, 0, 27)
 fard.Image = "rbxassetid://18851155348"
 
-funni.Name = "funni"
-funni.Parent = ImageLabel
-funni.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-funni.BackgroundTransparency = 0.400
-funni.BorderColor3 = Color3.fromRGB(0, 0, 0)
-funni.BorderSizePixel = 0
-funni.Position = UDim2.new(0.0260869563, 0, 0.0837438405, 0)
-funni.Size = UDim2.new(0, 438, 0, 140)
-funni.Font = Enum.Font.SourceSans
-funni.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
-funni.PlaceholderText = "--enter scrip"
-funni.Text = ""
-funni.TextColor3 = Color3.fromRGB(251, 252, 255)
-funni.TextSize = 14.000
-funni.TextXAlignment = Enum.TextXAlignment.Left
-funni.TextYAlignment = Enum.TextYAlignment.Top
-
 clip.Name = "clip"
 clip.Parent = ImageLabel
 clip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -123,6 +106,23 @@ xfrombfdi.Text = "X"
 xfrombfdi.TextColor3 = Color3.fromRGB(255, 255, 255)
 xfrombfdi.TextSize = 14.000
 
+funni.Name = "funni"
+funni.Parent = MainUI
+funni.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+funni.BackgroundTransparency = 0.400
+funni.BorderColor3 = Color3.fromRGB(0, 0, 0)
+funni.BorderSizePixel = 0
+funni.Position = UDim2.new(0.0232033767, 0, 1.63360322, 0)
+funni.Size = UDim2.new(0, 438, 0, 143)
+funni.Font = Enum.Font.SourceSans
+funni.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+funni.PlaceholderText = "--enter scrip"
+funni.Text = ""
+funni.TextColor3 = Color3.fromRGB(251, 252, 255)
+funni.TextSize = 14.000
+funni.TextXAlignment = Enum.TextXAlignment.Left
+funni.TextYAlignment = Enum.TextYAlignment.Top
+
 ClosedUI.Name = "ClosedUI"
 ClosedUI.Parent = BazingaUI
 ClosedUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -143,41 +143,44 @@ ClosedUI_2.Image = "rbxassetid://91164717917984"
 
 -- Scripts:
 
-local function OMFJZO_fake_script() -- exec.LocalScript 
+local function DQDZ_fake_script() -- exec.LocalScript 
 	local script = Instance.new('LocalScript', exec)
 
 	script.Parent.Activated:Connect(function()
 		loadstring(script.Parent.Parent.funni.Text)()
 	end)
 end
-coroutine.wrap(OMFJZO_fake_script)()
-local function UVNMJ_fake_script() -- Clear.LocalScript 
+coroutine.wrap(DQDZ_fake_script)()
+local function ODIHEOF_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	script.Parent.Activated:Connect(function()
 		script.Parent.Parent.funni.Text = ""
 	end)
 end
-coroutine.wrap(UVNMJ_fake_script)()
-local function DGLPX_fake_script() -- fard.LocalScript 
+coroutine.wrap(ODIHEOF_fake_script)()
+local function TLXX_fake_script() -- fard.LocalScript 
 	local script = Instance.new('LocalScript', fard)
 
 	script.Parent.Activated:Connect(function()
-		script.Parent.Bazinga.Playing = true
+		local bazinga = Instance.new("Sound")
+		bazinga.Parent = script.Parent
+		bazinga.SoundId = 18728158453
+		bazinga.Playing = true
 	end)
 end
-coroutine.wrap(DGLPX_fake_script)()
-local function MIFIRU_fake_script() -- clip.LocalScript 
+coroutine.wrap(TLXX_fake_script)()
+local function BGSOX_fake_script() -- clip.LocalScript 
 	local script = Instance.new('LocalScript', clip)
 
 	script.Parent.Activated:Connect(function()
 		script.Parent.Parent.funni.Text = getclipboard()
-		wait(0.01)
-		loadstring(script.Parent.Parent.funni.Text)
+		wait(0.2)
+		loadstring(script.Parent.Parent.Parent.funni.Text)()
 	end)
 end
-coroutine.wrap(MIFIRU_fake_script)()
-local function IIBYPFA_fake_script() -- MainUI.LocalScript 
+coroutine.wrap(BGSOX_fake_script)()
+local function KULJGKI_fake_script() -- MainUI.LocalScript 
 	local script = Instance.new('LocalScript', MainUI)
 
 	local sheldon = script.Parent
@@ -185,8 +188,8 @@ local function IIBYPFA_fake_script() -- MainUI.LocalScript
 	sheldon.Draggable = true
 	sheldon.Active = true
 end
-coroutine.wrap(IIBYPFA_fake_script)()
-local function ULIKH_fake_script() -- xfrombfdi.LocalScript 
+coroutine.wrap(KULJGKI_fake_script)()
+local function NMJVD_fake_script() -- xfrombfdi.LocalScript 
 	local script = Instance.new('LocalScript', xfrombfdi)
 
 	local me = script.Parent.Parent.Parent.MainUI
@@ -199,8 +202,8 @@ local function ULIKH_fake_script() -- xfrombfdi.LocalScript
 	end)
 	
 end
-coroutine.wrap(ULIKH_fake_script)()
-local function PTQTIK_fake_script() -- ClosedUI_2.LocalScript 
+coroutine.wrap(NMJVD_fake_script)()
+local function XLAP_fake_script() -- ClosedUI_2.LocalScript 
 	local script = Instance.new('LocalScript', ClosedUI_2)
 
 	script.Parent.Activated:Connect(function()
@@ -209,11 +212,11 @@ local function PTQTIK_fake_script() -- ClosedUI_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(PTQTIK_fake_script)()
-local function WIAXGY_fake_script() -- ClosedUI.LocalScript 
+coroutine.wrap(XLAP_fake_script)()
+local function RCRYF_fake_script() -- ClosedUI.LocalScript 
 	local script = Instance.new('LocalScript', ClosedUI)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(WIAXGY_fake_script)()
+coroutine.wrap(RCRYF_fake_script)()
